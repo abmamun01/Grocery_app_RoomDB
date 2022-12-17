@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200">
+
+        <TextView
+            android:id="@+id/idTVHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Items to cart"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVHeading"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Item Name"
+
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEditItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Name"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEditItemQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Quantity"
+                    android:inputType="number"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.TextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idEditItemPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Item Price"
+                    android:inputType="number"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/idCancelBTN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/idAddBTN"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
